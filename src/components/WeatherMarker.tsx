@@ -1,5 +1,6 @@
 import { Droplets, Wind } from 'lucide-react';
 import { describeWeatherCode } from '@/lib/weatherCodes';
+import { formatDuration } from '@/lib/time';
 import type { StopForecast } from '@/lib/types';
 
 interface WeatherMarkerProps {
