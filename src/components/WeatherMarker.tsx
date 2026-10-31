@@ -11,7 +11,7 @@ interface WeatherMarkerProps {
 function tripLabel({ stop }: StopForecast): string {
   if (stop.kind === 'start') return 'Start';
   if (stop.kind === 'destination') return 'End';
-  return `+${Math.round(stop.drivingSeconds / 60)} min`;
+  return `+${formatDuration(stop.drivingSeconds)}`;
 }
 
 export default function WeatherMarker({ item, selected }: WeatherMarkerProps) {
